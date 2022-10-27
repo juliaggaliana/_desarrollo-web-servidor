@@ -7,6 +7,34 @@
     <title>Ejercicio 4</title>
 </head>
 <body>
-    
-</body>
+    <h1>Ejercicio 4</h1>
+    <?php
+    $series[
+        []
+        []
+        []
+        []
+        []
+    ]
+    ?>
+
+        <table>
+            <tr>
+                <th>Título</th>
+                <th>Plataforma</th>
+                <th>Temporadas</th>
+            </tr>
+        <?php
+         foreach($series as $serie){
+             list ($titulo,$plataforma, $temporadas) = $serie;
+            ?>
+
+         <tr>
+
+}
+
+
+
+
+    </body>
 </html>

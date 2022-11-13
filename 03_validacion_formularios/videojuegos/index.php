@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Videojuegos</title>
+
 </head>
 <body>
+   
     <h2>Nuevo videojuego</h2>
     <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -17,6 +19,7 @@
                 $temp_consola = depurar($_POST["consola"]);
             } else {
                 $temp_consola = "";
+                
             }
             $temp_descripcion = $_POST["descripcion"];
 
@@ -83,7 +86,7 @@
             return $dato;
         }
     ?>
-    <form action="" method="post">
+    <form action="" method="post" >
         <p>Título: <input type="text" name="titulo">
             <span class="error">
                 * <?php if(isset($err_titulo)) echo $err_titulo ?>
@@ -112,5 +115,9 @@
         </p>
         <p><input type="submit" value="Crear"></p>
     </form>
+    
+
+   
+  </body>
 </body>
 </html>

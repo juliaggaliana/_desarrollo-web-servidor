@@ -43,6 +43,7 @@ li a:hover {
   background-color: #f0520a;
 }
 
+tr:hover {background-color: coral;}
 </style>
 </head>
 <body>
